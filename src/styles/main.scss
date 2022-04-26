@@ -36,22 +36,43 @@ ul {
   font-weight: normal;
   border-bottom: 1px solid rgba(0,0,0, 0.1);
   font-size: 1.8rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 h2 {
-  padding: 1.8rem 2rem;
+  padding: 1.8rem 2.5rem 1.8rem 2rem;
   font-weight: 100;
   border-bottom: 1px solid rgba(0,0,0, 0.1);
   font-size: 1.7rem;
   font-style: italic;
   color: rgba(0,0,0, 0.5);
   text-shadow: 1px 1px rgba(0,0,0, 0.1);
+  display: flex;
+  justify-content: space-between;
 }
 
 li {
   padding: 1.8rem 2rem;
   border-bottom: 1px solid rgba(0,0,0, 0.1);
+  display: flex;
+  justify-content: space-between;
 }
+
+i {
+  padding: 5px;
+  color: rgba(0,0,0, 0.5);
+  cursor: pointer;
+}
+
+.fa-square {
+  cursor: pointer;
+}
+
+.fa-ellipsis-vertical {
+  cursor: move;
+}
+
 
 .clear {
   padding: 1.8rem 2rem;

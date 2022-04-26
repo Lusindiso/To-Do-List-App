@@ -18,7 +18,7 @@ const todo = [
 const createList = () => {
   todo.forEach((el) => {
     const li = document.createElement('li');
-    li.innerText = el.description;
+    li.innerHTML = `<span><i class="fa-regular fa-square"></i> ${el.description}</span><i class="fa-solid fa-ellipsis-vertical"></i>`;
     todoList.appendChild(li);
   });
 };
