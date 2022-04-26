@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: rgba(0,0,0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   font-size: 1.7rem;
 }
 
@@ -28,13 +28,13 @@ ul {
   width: 85vw;
   max-width: 90rem;
   margin: 0 auto;
-  box-shadow: 8px 5px 25px rgba(0,0,0, 0.2);
+  box-shadow: 8px 5px 25px rgba(0, 0, 0, 0.2);
 }
 
 .heading {
   padding: 1.8rem 2rem;
   font-weight: normal;
-  border-bottom: 1px solid rgba(0,0,0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 1.8rem;
   display: flex;
   justify-content: space-between;
@@ -43,25 +43,25 @@ ul {
 h2 {
   padding: 1.8rem 2.5rem 1.8rem 2rem;
   font-weight: 100;
-  border-bottom: 1px solid rgba(0,0,0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 1.7rem;
   font-style: italic;
-  color: rgba(0,0,0, 0.5);
-  text-shadow: 1px 1px rgba(0,0,0, 0.1);
+  color: rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
 }
 
 li {
   padding: 1.8rem 2rem;
-  border-bottom: 1px solid rgba(0,0,0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
 }
 
 i {
   padding: 5px;
-  color: rgba(0,0,0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
@@ -73,11 +73,10 @@ i {
   cursor: move;
 }
 
-
 .clear {
   padding: 1.8rem 2rem;
   text-align: center;
-  color: rgba(0,0,0, 0.6);
-  background-color: rgba(0,0,0, 0.05);
+  color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.05);
   cursor: pointer;
 }
