@@ -1,13 +1,15 @@
 /* eslint-disable no-return-assign */
 /* eslint-disable no-plusplus */
+import completed from './completed.js';
 import createList from './displayTasks.js';
 
 const todoList = document.querySelector('.todo-list');
 const form = document.querySelector('.form');
 const addTask = document.getElementById('add-task');
 const clear = document.querySelector('.clear');
+const claerRotate = document.querySelector('.fa-arrows-rotate');
 
-const setData = (tasks) => {
+export const setData = (tasks) => {
   localStorage.setItem('inputData', JSON.stringify(tasks));
 };
 
@@ -51,11 +53,23 @@ const eventHandle = (tasks) => {
           task.description = e.target.value;
         }
       });
+      createList(tasks);
       setData(tasks);
     }
   };
 
+  todoList.onchange = (e) => {
+    completed(e, tasks);
+    setData(tasks);
+  };
+
   clear.onclick = () => {
+    tasks.splice(0, tasks.length);
+    createList(tasks);
+    setData(tasks);
+  };
+
+  claerRotate.onclick = () => {
     tasks.splice(0, tasks.length);
     createList(tasks);
     setData(tasks);
