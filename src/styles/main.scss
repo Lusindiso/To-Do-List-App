@@ -40,12 +40,10 @@ ul {
 }
 
 label {
-  padding: 0.3rem 3rem 0.3rem 2rem;
+  padding: 0.3rem 2rem 0.3rem 1rem;
   font-weight: 100;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 1.7rem;
-
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,7 +53,7 @@ input,
 input:active {
   outline: none;
   border: none;
-  padding: 1.5rem 0;
+  padding: 1.5rem 0rem;
   font-size: 1.7rem;
 }
 
@@ -78,24 +76,48 @@ input:active {
 }
 
 li {
-  padding: 1.8rem 2rem;
+  padding: 0.3rem 2rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+li span {
+  width: 100%;
 }
 
 i {
   padding: 5px;
   color: rgba(0, 0, 0, 0.5);
   cursor: pointer;
-}
-
-.fa-square {
-  cursor: pointer;
+  font-size: 1.7rem;
 }
 
 .fa-ellipsis-vertical {
   cursor: move;
+  width: 1rem;
+}
+
+.task-text,
+.task-text:active {
+  width: 95%;
+  padding-left: 10px;
+}
+
+.fa-trash-can{
+  display: none;
+}
+.task-text:focus-visible ~ .fa-trash-can {
+  display: block;
+}
+
+.task-text:focus ~ .fa-ellipsis-vertical {
+  display: none;
+}
+
+.fa-trash-can:hover {
+  display: block;
 }
 
 .clear {
@@ -104,4 +126,5 @@ i {
   color: rgba(0, 0, 0, 0.6);
   background-color: rgba(0, 0, 0, 0.05);
   cursor: pointer;
+  font-size: 1.7rem;
 }
