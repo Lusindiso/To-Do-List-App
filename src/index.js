@@ -1,5 +1,5 @@
-import handleSubmit from './modules/handleSubmit.js';
+import eventHandle from './modules/eventHandle.js';
 import './styles/main.scss';
 
 const tasks = [];
-handleSubmit(tasks);
+eventHandle(tasks);

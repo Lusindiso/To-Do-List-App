@@ -11,7 +11,7 @@ const setData = (tasks) => {
   localStorage.setItem('inputData', JSON.stringify(tasks));
 };
 
-const handleSubmit = (tasks) => {
+const eventHandle = (tasks) => {
   if (localStorage.getItem('inputData')) {
     tasks = JSON.parse(localStorage.getItem('inputData'));
     createList(tasks);
@@ -62,4 +62,4 @@ const handleSubmit = (tasks) => {
   };
 };
 
-export default handleSubmit;
+export default eventHandle;
