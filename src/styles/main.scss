@@ -87,6 +87,11 @@ li span {
   width: 100%;
 }
 
+.completed:checked + input {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.7);
+}
+
 i {
   padding: 5px;
   color: rgba(0, 0, 0, 0.5);
