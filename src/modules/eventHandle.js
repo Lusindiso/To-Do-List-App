@@ -64,7 +64,7 @@ const eventHandle = (tasks) => {
   };
 
   clear.onclick = () => {
-    tasks.splice(0, tasks.length);
+    tasks = tasks.filter((item) => item.completed !== true);
     createList(tasks);
     setData(tasks);
   };
