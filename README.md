@@ -10,6 +10,9 @@
 - JavaScript
 - Webpack
 
+## Live Site
+[ToDo List link](https://lusindiso.github.io/To-Do-List-App/)
+
 ## Getting Started
 To run this project, you only need a computer with latest npm and a browser (like Google Chrome, Mozilla Firefox, Microsoft Edge, Apple Safari, etc.) installed, and follow these steps:
 
