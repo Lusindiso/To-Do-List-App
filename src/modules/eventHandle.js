@@ -39,7 +39,7 @@ const eventHandle = (tasks) => {
   todoList.onclick = (e) => {
     if (e.target.className === 'fa-solid fa-trash-can') {
       tasks = tasks.filter((item) => item.index !== parseInt(e.target.id, 10));
-      tasks.map((task, i) => task.index = i+1);
+      tasks.map((task, i) => task.index = i + 1);
       createList(tasks);
       setData(tasks);
     }
