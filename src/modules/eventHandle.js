@@ -23,7 +23,7 @@ const eventHandle = (tasks) => {
     if (tasks.length > 0) {
       index = tasks[tasks.length - 1].index + 1;
     } else {
-      index = 0;
+      index = 1;
     }
     const task = addTask.value;
     tasks.push({
@@ -39,13 +39,14 @@ const eventHandle = (tasks) => {
   todoList.onclick = (e) => {
     if (e.target.className === 'fa-solid fa-trash-can') {
       tasks = tasks.filter((item) => item.index !== parseInt(e.target.id, 10));
-      tasks.map((task, i) => task.index = i);
+      tasks.map((task, i) => task.index = i+1);
       createList(tasks);
       setData(tasks);
     }
   };
 
   todoList.onchange = (e) => {
+    completed(e, tasks);
     if (e.target.className === 'task-text') {
       // eslint-disable-next-line array-callback-return
       tasks.map((task) => {
@@ -54,12 +55,7 @@ const eventHandle = (tasks) => {
         }
       });
       createList(tasks);
-      setData(tasks);
     }
-  };
-
-  todoList.onchange = (e) => {
-    completed(e, tasks);
     setData(tasks);
   };
 
