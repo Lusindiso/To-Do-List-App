@@ -1,6 +1,6 @@
 # To Do List App
 
-> This project is a simple To Do App where you can add and remove your To Do tasks.
+> This project is a simple To Do App where you can add and remove your To Do tasks. This project is build with Javascript and uses local storage to store data through sessions.
 
 
 ## Built With
